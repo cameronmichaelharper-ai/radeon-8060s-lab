@@ -123,6 +123,29 @@ for clinical Q&A but means the specific table isn't uniquely #1; (b) reasoning-m
 within-paper reranker is the right use of Marathon and validated here; ColPali *embedding* retrieval
 stays not-worth-it. Cost: 47 vision calls for 3 queries — fine at this corpus scale, not at scale.
 
+## UPDATE 2026-07-04 (later) — powered 14-query eval (was n=5)
+
+Eval expanded 5→14 queries (q6–q14 mined + adversarially verified from the same 3 papers:
+waist circ, Matsuda index, I² heterogeneity, per-protocol counts, baseline LDL/HbA1c).
+Retrievers re-scored on all 14 (same cached page embeddings; score_multi_vector = Qdrant MAX_SIM):
+
+| Model | hit@1 | hit@3 | hit@5 | MRR | paper@1 |
+|---|---|---|---|---|---|
+| colSmol-256M | 3/14 | 6/14 | 8/14 | 0.386 | 13/14 |
+| **colSmol-500M** | **7/14** | 8/14 | 9/14 | **0.582** | 13/14 |
+| colqwen2.5-v0.2 | 5/14 | 7/14 | 10/14 | 0.502 | 13/14 |
+| **colnomic-3b** | 6/14 | **9/14** | **11/14** | 0.575 | 13/14 |
+
+**More nuanced than n=5 implied.** colSmol-500M is *best on hit@1*; colnomic is *best on recall*
+(hit@5 11/14 ≈ 79%) — recall is the metric that matters for feeding a reranker. The 3B models are
+**not** uniformly better than 500M. Easy = distinctive-term table/figure facts (q10 I² forest plot,
+q7 Matsuda, q8 completed-trial CONSORT → rank 1 broadly). Hard = the FMD results table (q1, still
+rank 8–10) and **baseline-characteristics Table 1 queries** (q13 rank 8–10; **q14 baseline HbA1c not
+in ANY model's top-10**, some routing to the wrong paper). So the retrieval ceiling isn't uniform —
+it's specifically dense results tables and generic Table-1 rows that dense retrieval buries. This
+*strengthens* the hybrid rationale: use colnomic's recall to get a candidate set, let the vision-MoE
+reader resolve the hard table pages.
+
 ## Files
 - Scripts: `01_fetch_and_render.py` · `02_encode_and_index.py` · `03_query.py` · `04_eval_queries.py`
   · `05_sweep.py` (model-parameterized) · `06_score.py` (vs gold) · `07_read_page.py` (Lemonade vision)

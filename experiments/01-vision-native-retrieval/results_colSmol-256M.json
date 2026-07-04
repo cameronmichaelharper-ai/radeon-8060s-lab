@@ -261,6 +261,474 @@
         "page": 10,
         "score": 13.058
       }
+    ],
+    "q6": [
+      {
+        "pmcid": "PMC11153305",
+        "page": 0,
+        "score": 25.2781
+      },
+      {
+        "pmcid": "PMC11153305",
+        "page": 1,
+        "score": 23.7651
+      },
+      {
+        "pmcid": "PMC11153305",
+        "page": 11,
+        "score": 23.5064
+      },
+      {
+        "pmcid": "PMC11271409",
+        "page": 10,
+        "score": 23.0076
+      },
+      {
+        "pmcid": "PMC11153305",
+        "page": 2,
+        "score": 22.824
+      },
+      {
+        "pmcid": "PMC11153305",
+        "page": 3,
+        "score": 22.7203
+      },
+      {
+        "pmcid": "PMC11153305",
+        "page": 10,
+        "score": 22.4043
+      },
+      {
+        "pmcid": "PMC11271409",
+        "page": 5,
+        "score": 22.3968
+      },
+      {
+        "pmcid": "PMC11153305",
+        "page": 14,
+        "score": 22.3597
+      },
+      {
+        "pmcid": "PMC11153305",
+        "page": 8,
+        "score": 22.245
+      }
+    ],
+    "q7": [
+      {
+        "pmcid": "PMC11153305",
+        "page": 14,
+        "score": 24.5268
+      },
+      {
+        "pmcid": "PMC11153305",
+        "page": 8,
+        "score": 23.9928
+      },
+      {
+        "pmcid": "PMC11153305",
+        "page": 1,
+        "score": 23.8787
+      },
+      {
+        "pmcid": "PMC11153305",
+        "page": 11,
+        "score": 23.3904
+      },
+      {
+        "pmcid": "PMC11153305",
+        "page": 3,
+        "score": 22.6004
+      },
+      {
+        "pmcid": "PMC11153305",
+        "page": 9,
+        "score": 22.5964
+      },
+      {
+        "pmcid": "PMC11153305",
+        "page": 0,
+        "score": 22.0666
+      },
+      {
+        "pmcid": "PMC11153305",
+        "page": 10,
+        "score": 21.2959
+      },
+      {
+        "pmcid": "PMC11153305",
+        "page": 7,
+        "score": 21.1248
+      },
+      {
+        "pmcid": "PMC11271409",
+        "page": 10,
+        "score": 20.7086
+      }
+    ],
+    "q8": [
+      {
+        "pmcid": "PMC11153305",
+        "page": 2,
+        "score": 26.163
+      },
+      {
+        "pmcid": "PMC11153305",
+        "page": 4,
+        "score": 25.161
+      },
+      {
+        "pmcid": "PMC11153305",
+        "page": 5,
+        "score": 25.1141
+      },
+      {
+        "pmcid": "PMC11153305",
+        "page": 12,
+        "score": 24.9105
+      },
+      {
+        "pmcid": "PMC11153305",
+        "page": 11,
+        "score": 24.2898
+      },
+      {
+        "pmcid": "PMC11153305",
+        "page": 0,
+        "score": 24.2632
+      },
+      {
+        "pmcid": "PMC11153305",
+        "page": 10,
+        "score": 24.1265
+      },
+      {
+        "pmcid": "PMC11153305",
+        "page": 9,
+        "score": 23.4025
+      },
+      {
+        "pmcid": "PMC11153305",
+        "page": 8,
+        "score": 22.7487
+      },
+      {
+        "pmcid": "PMC11153305",
+        "page": 1,
+        "score": 22.5629
+      }
+    ],
+    "q9": [
+      {
+        "pmcid": "PMC10867699",
+        "page": 0,
+        "score": 19.7971
+      },
+      {
+        "pmcid": "PMC10867699",
+        "page": 9,
+        "score": 19.3906
+      },
+      {
+        "pmcid": "PMC10867699",
+        "page": 2,
+        "score": 18.8949
+      },
+      {
+        "pmcid": "PMC10867699",
+        "page": 11,
+        "score": 18.758
+      },
+      {
+        "pmcid": "PMC10867699",
+        "page": 4,
+        "score": 18.7114
+      },
+      {
+        "pmcid": "PMC10867699",
+        "page": 3,
+        "score": 18.5774
+      },
+      {
+        "pmcid": "PMC10867699",
+        "page": 1,
+        "score": 18.3152
+      },
+      {
+        "pmcid": "PMC10867699",
+        "page": 10,
+        "score": 18.1222
+      },
+      {
+        "pmcid": "PMC10867699",
+        "page": 16,
+        "score": 17.7319
+      },
+      {
+        "pmcid": "PMC10867699",
+        "page": 15,
+        "score": 17.7041
+      }
+    ],
+    "q10": [
+      {
+        "pmcid": "PMC10867699",
+        "page": 8,
+        "score": 31.2857
+      },
+      {
+        "pmcid": "PMC10867699",
+        "page": 7,
+        "score": 30.8189
+      },
+      {
+        "pmcid": "PMC10867699",
+        "page": 4,
+        "score": 29.7212
+      },
+      {
+        "pmcid": "PMC10867699",
+        "page": 3,
+        "score": 29.4992
+      },
+      {
+        "pmcid": "PMC10867699",
+        "page": 0,
+        "score": 29.4727
+      },
+      {
+        "pmcid": "PMC10867699",
+        "page": 9,
+        "score": 29.4421
+      },
+      {
+        "pmcid": "PMC11153305",
+        "page": 10,
+        "score": 27.8603
+      },
+      {
+        "pmcid": "PMC10867699",
+        "page": 11,
+        "score": 27.3958
+      },
+      {
+        "pmcid": "PMC11271409",
+        "page": 1,
+        "score": 27.3328
+      },
+      {
+        "pmcid": "PMC11271409",
+        "page": 2,
+        "score": 26.8509
+      }
+    ],
+    "q11": [
+      {
+        "pmcid": "PMC10867699",
+        "page": 7,
+        "score": 24.9587
+      },
+      {
+        "pmcid": "PMC10867699",
+        "page": 8,
+        "score": 24.8368
+      },
+      {
+        "pmcid": "PMC10867699",
+        "page": 4,
+        "score": 24.6183
+      },
+      {
+        "pmcid": "PMC10867699",
+        "page": 0,
+        "score": 24.0674
+      },
+      {
+        "pmcid": "PMC10867699",
+        "page": 9,
+        "score": 23.7936
+      },
+      {
+        "pmcid": "PMC10867699",
+        "page": 11,
+        "score": 23.4523
+      },
+      {
+        "pmcid": "PMC10867699",
+        "page": 3,
+        "score": 23.1801
+      },
+      {
+        "pmcid": "PMC10867699",
+        "page": 16,
+        "score": 22.8392
+      },
+      {
+        "pmcid": "PMC11153305",
+        "page": 10,
+        "score": 22.4005
+      },
+      {
+        "pmcid": "PMC11153305",
+        "page": 4,
+        "score": 21.9164
+      }
+    ],
+    "q12": [
+      {
+        "pmcid": "PMC11271409",
+        "page": 2,
+        "score": 17.8278
+      },
+      {
+        "pmcid": "PMC11271409",
+        "page": 1,
+        "score": 17.792
+      },
+      {
+        "pmcid": "PMC11153305",
+        "page": 5,
+        "score": 17.3095
+      },
+      {
+        "pmcid": "PMC11271409",
+        "page": 13,
+        "score": 17.2769
+      },
+      {
+        "pmcid": "PMC11153305",
+        "page": 4,
+        "score": 16.6558
+      },
+      {
+        "pmcid": "PMC11153305",
+        "page": 10,
+        "score": 15.2111
+      },
+      {
+        "pmcid": "PMC11271409",
+        "page": 4,
+        "score": 15.1068
+      },
+      {
+        "pmcid": "PMC11153305",
+        "page": 12,
+        "score": 15.0794
+      },
+      {
+        "pmcid": "PMC11271409",
+        "page": 17,
+        "score": 14.8857
+      },
+      {
+        "pmcid": "PMC11271409",
+        "page": 3,
+        "score": 14.4413
+      }
+    ],
+    "q13": [
+      {
+        "pmcid": "PMC11271409",
+        "page": 6,
+        "score": 21.9322
+      },
+      {
+        "pmcid": "PMC11271409",
+        "page": 5,
+        "score": 21.8195
+      },
+      {
+        "pmcid": "PMC11271409",
+        "page": 1,
+        "score": 21.4667
+      },
+      {
+        "pmcid": "PMC11271409",
+        "page": 2,
+        "score": 20.9906
+      },
+      {
+        "pmcid": "PMC11271409",
+        "page": 11,
+        "score": 20.8668
+      },
+      {
+        "pmcid": "PMC11271409",
+        "page": 0,
+        "score": 20.7787
+      },
+      {
+        "pmcid": "PMC11271409",
+        "page": 7,
+        "score": 20.7493
+      },
+      {
+        "pmcid": "PMC11271409",
+        "page": 10,
+        "score": 19.9472
+      },
+      {
+        "pmcid": "PMC11271409",
+        "page": 4,
+        "score": 19.9352
+      },
+      {
+        "pmcid": "PMC11271409",
+        "page": 3,
+        "score": 19.8184
+      }
+    ],
+    "q14": [
+      {
+        "pmcid": "PMC11153305",
+        "page": 12,
+        "score": 18.3732
+      },
+      {
+        "pmcid": "PMC11153305",
+        "page": 2,
+        "score": 18.129
+      },
+      {
+        "pmcid": "PMC11153305",
+        "page": 3,
+        "score": 17.8832
+      },
+      {
+        "pmcid": "PMC11271409",
+        "page": 2,
+        "score": 17.791
+      },
+      {
+        "pmcid": "PMC11153305",
+        "page": 10,
+        "score": 17.7601
+      },
+      {
+        "pmcid": "PMC11153305",
+        "page": 11,
+        "score": 17.6471
+      },
+      {
+        "pmcid": "PMC11153305",
+        "page": 4,
+        "score": 17.3811
+      },
+      {
+        "pmcid": "PMC11271409",
+        "page": 12,
+        "score": 17.2804
+      },
+      {
+        "pmcid": "PMC11153305",
+        "page": 9,
+        "score": 17.2458
+      },
+      {
+        "pmcid": "PMC11153305",
+        "page": 7,
+        "score": 17.0192
+      }
     ]
   }
 }

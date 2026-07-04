@@ -77,15 +77,17 @@ Running list of models worth testing on this machine, by role in the research-mc
 
 ---
 
-### Tested-so-far summary (experiment 01)
+### Tested-so-far summary (experiment 01) — powered 14-query eval
 
-| Model | hit@1 (vs gold) | verdict |
-|---|---|---|
-| colSmol-256M | 1/5 | weak |
-| colSmol-500M | 2/5 | marginal |
-| colqwen2.5-v0.2 | 2/5 | marginal |
-| colnomic-embed-multimodal-3b | 2/5 (hit@5 **4/5**, MRR 0.52) | **best pure retriever**; q1 table still rank 9 |
-| Gemma-4-26B-A4B (read-to-rank) | ~3/3 top-3 | **best for table localization** |
+| Model | hit@1 | hit@5 | MRR | verdict |
+|---|---|---|---|---|
+| colSmol-256M | 3/14 | 8/14 | 0.39 | weakest |
+| colSmol-500M | **7/14** | 9/14 | **0.58** | best hit@1 (surprise) |
+| colqwen2.5-v0.2 | 5/14 | 10/14 | 0.50 | middling |
+| colnomic-embed-multimodal-3b | 6/14 | **11/14** | 0.58 | **best recall** (feeds reranker) |
+| Gemma-4-26B-A4B (read-to-rank) | best on table queries (n=3) | — | — | **best table localization** |
 
-**Takeaway:** embedding retrieval (even SOTA colnomic) buries the specific results table; vision-MoE
-read-to-rank finds it. Winning design = colnomic top-5 → Gemma read-to-rank over those 5.
+**Takeaway:** on 14 queries the retrievers are closer than n=5 suggested — 500M ties/leads on hit@1,
+colnomic leads on recall (79% hit@5). Dense retrieval reliably buries the FMD results table (q1) and
+Table-1 baseline rows (q14 retrieved by none); the vision-MoE reader resolves these. Winning design =
+**colnomic top-K (recall) → Gemma read-to-rank over the K candidates (table localization)**.
