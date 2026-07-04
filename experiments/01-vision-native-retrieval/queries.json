@@ -1,0 +1,7 @@
+[
+  {"id": "q1", "paper": "PMC11153305", "text": "In the fasting-mimicking diet trial, what was the effect on HbA1c and the medication effect score?", "target": "results table with HbA1c / medication effect score change between FMD and control"},
+  {"id": "q2", "paper": "PMC10867699", "text": "What was the pooled reduction in systolic blood pressure from digital health interventions for hypertension?", "target": "meta-analysis pooled systolic BP effect (forest plot / results table)"},
+  {"id": "q3", "paper": "PMC11271409", "text": "What was the primary outcome result comparing the personalized dietary program with the control diet for triglycerides or postprandial response?", "target": "primary outcome results table/figure"},
+  {"id": "q4", "paper": "PMC11153305", "text": "How many participants were randomized in the fasting-mimicking diet trial and how were they allocated between groups?", "target": "participant flow / CONSORT diagram / randomization numbers"},
+  {"id": "q5", "paper": "PMC11271409", "text": "What adverse events or safety outcomes were reported in the personalized nutrition trial?", "target": "adverse events / safety reporting section"}
+]

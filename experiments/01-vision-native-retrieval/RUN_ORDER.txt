@@ -1,0 +1,7 @@
+docker run -d --name qdrant -p 6333:6333 -p 6334:6334 -v C:/AI/research/vision-retrieval-poc/qdrant_storage:/qdrant/storage qdrant/qdrant
+cd C:\AI\research\vision-retrieval-poc
+.venv\Scripts\activate
+python 01_fetch_and_render.py
+python 02_encode_and_index.py
+python 03_query.py "What was the primary endpoint of the study?"
+python 03_query.py --fallback "What was the primary endpoint of the study?"

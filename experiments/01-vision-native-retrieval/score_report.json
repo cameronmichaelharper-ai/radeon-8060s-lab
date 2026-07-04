@@ -1,0 +1,248 @@
+{
+  "vidore/colSmol-256M": {
+    "agg": {
+      "hit@1": 1,
+      "hit@3": 1,
+      "hit@5": 2,
+      "mrr": 0.3341,
+      "paper@1": 5,
+      "n": 5
+    },
+    "per_query": {
+      "q1": {
+        "gold_pages": [
+          4,
+          7
+        ],
+        "gold_pmcid": "PMC11153305",
+        "first_hit_rank": 9,
+        "paper@1": true,
+        "top1": {
+          "pmcid": "PMC11153305",
+          "page": 0,
+          "score": 25.049
+        }
+      },
+      "q2": {
+        "gold_pages": [
+          4,
+          7,
+          8
+        ],
+        "gold_pmcid": "PMC10867699",
+        "first_hit_rank": 4,
+        "paper@1": true,
+        "top1": {
+          "pmcid": "PMC10867699",
+          "page": 1,
+          "score": 17.8451
+        }
+      },
+      "q3": {
+        "gold_pages": [
+          0,
+          4
+        ],
+        "gold_pmcid": "PMC11271409",
+        "first_hit_rank": 6,
+        "paper@1": true,
+        "top1": {
+          "pmcid": "PMC11271409",
+          "page": 7,
+          "score": 21.1884
+        }
+      },
+      "q4": {
+        "gold_pages": [
+          5
+        ],
+        "gold_pmcid": "PMC11153305",
+        "first_hit_rank": 7,
+        "paper@1": true,
+        "top1": {
+          "pmcid": "PMC11153305",
+          "page": 2,
+          "score": 20.9941
+        }
+      },
+      "q5": {
+        "gold_pages": [
+          0,
+          4
+        ],
+        "gold_pmcid": "PMC11271409",
+        "first_hit_rank": 1,
+        "paper@1": true,
+        "top1": {
+          "pmcid": "PMC11271409",
+          "page": 0,
+          "score": 16.2429
+        }
+      }
+    }
+  },
+  "vidore/colSmol-500M": {
+    "agg": {
+      "hit@1": 2,
+      "hit@3": 2,
+      "hit@5": 2,
+      "mrr": 0.4533,
+      "paper@1": 5,
+      "n": 5
+    },
+    "per_query": {
+      "q1": {
+        "gold_pages": [
+          4,
+          7
+        ],
+        "gold_pmcid": "PMC11153305",
+        "first_hit_rank": 10,
+        "paper@1": true,
+        "top1": {
+          "pmcid": "PMC11153305",
+          "page": 1,
+          "score": 23.7679
+        }
+      },
+      "q2": {
+        "gold_pages": [
+          4,
+          7,
+          8
+        ],
+        "gold_pmcid": "PMC10867699",
+        "first_hit_rank": 6,
+        "paper@1": true,
+        "top1": {
+          "pmcid": "PMC10867699",
+          "page": 11,
+          "score": 17.4934
+        }
+      },
+      "q3": {
+        "gold_pages": [
+          0,
+          4
+        ],
+        "gold_pmcid": "PMC11271409",
+        "first_hit_rank": 1,
+        "paper@1": true,
+        "top1": {
+          "pmcid": "PMC11271409",
+          "page": 0,
+          "score": 22.8341
+        }
+      },
+      "q4": {
+        "gold_pages": [
+          5
+        ],
+        "gold_pmcid": "PMC11153305",
+        "first_hit_rank": null,
+        "paper@1": true,
+        "top1": {
+          "pmcid": "PMC11153305",
+          "page": 0,
+          "score": 21.2745
+        }
+      },
+      "q5": {
+        "gold_pages": [
+          0,
+          4
+        ],
+        "gold_pmcid": "PMC11271409",
+        "first_hit_rank": 1,
+        "paper@1": true,
+        "top1": {
+          "pmcid": "PMC11271409",
+          "page": 0,
+          "score": 16.3372
+        }
+      }
+    }
+  },
+  "vidore/colqwen2.5-v0.2": {
+    "agg": {
+      "hit@1": 2,
+      "hit@3": 2,
+      "hit@5": 3,
+      "mrr": 0.4936,
+      "paper@1": 5,
+      "n": 5
+    },
+    "per_query": {
+      "q1": {
+        "gold_pages": [
+          4,
+          7
+        ],
+        "gold_pmcid": "PMC11153305",
+        "first_hit_rank": 8,
+        "paper@1": true,
+        "top1": {
+          "pmcid": "PMC11153305",
+          "page": 0,
+          "score": 25.4896
+        }
+      },
+      "q2": {
+        "gold_pages": [
+          4,
+          7,
+          8
+        ],
+        "gold_pmcid": "PMC10867699",
+        "first_hit_rank": 5,
+        "paper@1": true,
+        "top1": {
+          "pmcid": "PMC10867699",
+          "page": 1,
+          "score": 21.3093
+        }
+      },
+      "q3": {
+        "gold_pages": [
+          0,
+          4
+        ],
+        "gold_pmcid": "PMC11271409",
+        "first_hit_rank": 1,
+        "paper@1": true,
+        "top1": {
+          "pmcid": "PMC11271409",
+          "page": 0,
+          "score": 25.162
+        }
+      },
+      "q4": {
+        "gold_pages": [
+          5
+        ],
+        "gold_pmcid": "PMC11153305",
+        "first_hit_rank": 7,
+        "paper@1": true,
+        "top1": {
+          "pmcid": "PMC11153305",
+          "page": 0,
+          "score": 21.2984
+        }
+      },
+      "q5": {
+        "gold_pages": [
+          0,
+          4
+        ],
+        "gold_pmcid": "PMC11271409",
+        "first_hit_rank": 1,
+        "paper@1": true,
+        "top1": {
+          "pmcid": "PMC11271409",
+          "page": 0,
+          "score": 17.0729
+        }
+      }
+    }
+  }
+}

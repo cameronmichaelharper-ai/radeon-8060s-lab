@@ -1,0 +1,276 @@
+{
+  "q1": {
+    "pmcid": "PMC11153305",
+    "gold_pages": [
+      4,
+      7
+    ],
+    "n_pages": 15,
+    "read_to_rank": 2,
+    "top_page": 0,
+    "top_value": "\u20130.3 (medication effect score) and \u20133.2 mmol/mol / \u20130.3% ($\\text{HbA}_{1\\text{c}}$).",
+    "scored": [
+      {
+        "page": 0,
+        "score": 100,
+        "value": "\u20130.3 (medication effect score) and \u20133.2 mmol/mol / \u20130.3% ($\\text{HbA}_{1\\text{c}}$)."
+      },
+      {
+        "page": 1,
+        "score": 10,
+        "value": "NONE"
+      },
+      {
+        "page": 2,
+        "score": 0,
+        "value": "NONE"
+      },
+      {
+        "page": 3,
+        "score": 10,
+        "value": "NONE"
+      },
+      {
+        "page": 4,
+        "score": -1,
+        "value": ""
+      },
+      {
+        "page": 5,
+        "score": 0,
+        "value": "NONE"
+      },
+      {
+        "page": 6,
+        "score": 0,
+        "value": "NONE"
+      },
+      {
+        "page": 7,
+        "score": 100,
+        "value": "HbA1c (mmol/mol) effect: -5.0 (-8.0, -2.0) at 6 months, -3.2 (-6.2, -0.2) at 12 months; HbA1c (%) effect: -0.5 (-0.7, -0.2) at 6 months, -0.3 (-0.6, -0.0) at 12 months; MES effect: -0.1 (-0.2, 0.1) at 6 months, -0.3 (-0.4, -0.2) at 12 months."
+      },
+      {
+        "page": 8,
+        "score": 0,
+        "value": "NONE"
+      },
+      {
+        "page": 9,
+        "score": 100,
+        "value": "The question asks for the effect. The figure shows the trends. I can't extract a single \"value\" easily without reading the paper, but the figure *is* the answer."
+      },
+      {
+        "page": 10,
+        "score": -1,
+        "value": ""
+      },
+      {
+        "page": 11,
+        "score": 100,
+        "value": "HbA1c: -2.0 mmol/mol (95% CI -5.0, +0.9; p<0.01); HbA1c (%) corrected for medication use: -0.4% (95% CI -0.7, -0.1; p<0.01)"
+      },
+      {
+        "page": 12,
+        "score": 10,
+        "value": "NONE"
+      },
+      {
+        "page": 13,
+        "score": 0,
+        "value": "NONE"
+      },
+      {
+        "page": 14,
+        "score": 0,
+        "value": "NONE"
+      }
+    ]
+  },
+  "q2": {
+    "pmcid": "PMC10867699",
+    "gold_pages": [
+      4,
+      7,
+      8
+    ],
+    "n_pages": 17,
+    "read_to_rank": 2,
+    "top_page": 0,
+    "top_value": "-4.24 mm Hg (at 6 months)",
+    "scored": [
+      {
+        "page": 0,
+        "score": 100,
+        "value": "-4.24 mm Hg (at 6 months)"
+      },
+      {
+        "page": 1,
+        "score": -1,
+        "value": ""
+      },
+      {
+        "page": 2,
+        "score": 0,
+        "value": "NONE"
+      },
+      {
+        "page": 3,
+        "score": 0,
+        "value": "NONE"
+      },
+      {
+        "page": 4,
+        "score": 100,
+        "value": "-2.74 mmHg (6 months), -4.30 mmHg (12 months), -4.26 mmHg (6 months)"
+      },
+      {
+        "page": 5,
+        "score": 0,
+        "value": "NONE"
+      },
+      {
+        "page": 6,
+        "score": 0,
+        "value": "NONE"
+      },
+      {
+        "page": 7,
+        "score": 100,
+        "value": "The text mentions -13.70 mm Hg, and the forest plot shows various pooled differences. I'll list the values from the forest plot or the text."
+      },
+      {
+        "page": 8,
+        "score": 100,
+        "value": "The pooled reductions are provided for different time points: -2.79 (-5.82 to 0.24) at 3 and 12 months, -6.10 (-9.77 to -2.43) at 18 months, and -3.67 (-6.14 to -1.20) at 24 months. I will provide the summary values."
+      },
+      {
+        "page": 9,
+        "score": 100,
+        "value": "-4.24 mm Hg at 6 months and -4.30 mm Hg at 12 months"
+      },
+      {
+        "page": 10,
+        "score": 0,
+        "value": "NONE"
+      },
+      {
+        "page": 11,
+        "score": 10,
+        "value": "NONE"
+      },
+      {
+        "page": 12,
+        "score": 0,
+        "value": "NONE"
+      },
+      {
+        "page": 13,
+        "score": 0,
+        "value": "NONE"
+      },
+      {
+        "page": 14,
+        "score": 0,
+        "value": "NONE"
+      },
+      {
+        "page": 15,
+        "score": 0,
+        "value": "NONE"
+      },
+      {
+        "page": 16,
+        "score": 0,
+        "value": "NONE"
+      }
+    ]
+  },
+  "q4": {
+    "pmcid": "PMC11153305",
+    "gold_pages": [
+      5
+    ],
+    "n_pages": 15,
+    "read_to_rank": 15,
+    "top_page": 0,
+    "top_value": "100 individuals (51 to FMD group, 49 to control group)",
+    "scored": [
+      {
+        "page": 0,
+        "score": 100,
+        "value": "100 individuals (51 to FMD group, 49 to control group)"
+      },
+      {
+        "page": 1,
+        "score": 0,
+        "value": "NONE"
+      },
+      {
+        "page": 2,
+        "score": 20,
+        "value": "100 (The number included). Or maybe NONE if 100 isn't the \"randomized\" number. But usually, in these papers, included = randomized. However, without the split, it's incomplete."
+      },
+      {
+        "page": 3,
+        "score": 0,
+        "value": "NONE"
+      },
+      {
+        "page": 4,
+        "score": 100,
+        "value": "100 participants were randomly assigned to the FMD group (n=51) or the control group (n=49)"
+      },
+      {
+        "page": 5,
+        "score": -1,
+        "value": ""
+      },
+      {
+        "page": 6,
+        "score": 100,
+        "value": "92 participants (49 in FMD group, 43 in control group)"
+      },
+      {
+        "page": 7,
+        "score": 0,
+        "value": "NONE"
+      },
+      {
+        "page": 8,
+        "score": 85,
+        "value": "49 in FMD group and 43 in Control group (Total 92). Or just the $n$ values."
+      },
+      {
+        "page": 9,
+        "score": 0,
+        "value": "NONE"
+      },
+      {
+        "page": 10,
+        "score": 100,
+        "value": "43 in the FMD group and 39 in the control group"
+      },
+      {
+        "page": 11,
+        "score": 80,
+        "value": "51 in FMD group and 39 in control group (at baseline). Or just the numbers."
+      },
+      {
+        "page": 12,
+        "score": 0,
+        "value": "NONE"
+      },
+      {
+        "page": 13,
+        "score": 0,
+        "value": "NONE"
+      },
+      {
+        "page": 14,
+        "score": 0,
+        "value": "NONE"
+      }
+    ]
+  }
+}

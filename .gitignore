@@ -1,0 +1,28 @@
+# Regenerable / large artifacts — rebuild from ENV_SETUP.txt + numbered scripts
+.venv/
+venv/
+__pycache__/
+*.pyc
+
+# Model weights & caches
+*.gguf
+*.safetensors
+hf_cache/
+.cache/
+
+# Encoded embeddings (rebuild by re-running encode step)
+*.pkl
+embeddings_*/
+
+# Source PDFs & rendered page images (re-fetch/re-render from scripts)
+pdfs/
+pages/
+
+# Vector store data
+qdrant_storage/
+
+# Logs & scratch
+*.log
+sweep_*.log
+read_to_rank.log
+encode.log

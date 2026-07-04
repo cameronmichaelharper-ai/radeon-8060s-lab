@@ -1,0 +1,5 @@
+cd C:\AI\research\vision-retrieval-poc
+uv venv --python 3.12 .venv
+.venv\Scripts\activate
+uv pip install "colpali-engine==0.3.17" "transformers==5.3.0" "torch==2.8.0" "peft==0.18.0" pillow "pymupdf==1.28.0" "requests==2.32.4" "qdrant-client==1.18.0"
+python -c "import torch, transformers, colpali_engine, fitz, qdrant_client; print('torch', torch.__version__, '| transformers', transformers.__version__, '| colpali', colpali_engine.__version__, '| pymupdf', fitz.__version__, '| qdrant-client', qdrant_client.__version__, '| cuda', torch.cuda.is_available())"

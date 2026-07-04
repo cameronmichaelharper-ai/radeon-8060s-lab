@@ -1,0 +1,55 @@
+{
+  "labels": [
+    {
+      "query_id": "q1",
+      "pmcid": "PMC11153305",
+      "gold_pages": [
+        7,
+        4
+      ],
+      "answer_value": "HbA1c (primary outcome, ITT): FMD fell from 52.2\u00b19.3 to 49.5\u00b18.2 mmol/mol (6.9\u00b10.8% to 6.7\u00b10.8%) vs control 53.7\u00b112.2 to 53.8\u00b17.6 mmol/mol (7.1\u00b11.1% to 7.1\u00b10.7%); adjusted estimated treatment effect at 12 months -3.2 mmol/mol (95% CI -6.2, -0.2), p=0.04, equivalent -0.3% (95% CI -0.6, -0.0), p=0.04. MES: FMD 0.7\u00b10.4 to 0.5\u00b10.4 vs control 0.5\u00b10.4 to 0.7\u00b10.6; adjusted treatment effect at 12 months -0.3 (95% CI -0.4, -0.2), p<0.001.",
+      "confidence": "high"
+    },
+    {
+      "query_id": "q2",
+      "pmcid": "PMC10867699",
+      "gold_pages": [
+        4,
+        7,
+        8
+      ],
+      "answer_value": "Pooled mean difference in SBP change at 6 months (primary outcome): -2.74 mm Hg (95% CI, -6.43 to 0.95; P=.15; I2=80.32%), 10 studies (text p5/idx4; Figure 2 forest-plot diamond p8/idx7). Other pooled SBP-change diamonds (Figure 2, p8/idx7): 3-mo -7.00 (-17.31 to 3.31); 12-mo -4.30 (-8.38 to -0.23, P=.04, I2=71.43%); 18-mo -6.25 (-9.32 to -3.18); 24-mo (single study) -3.74 (-7.91 to 0.43). Pooled FOLLOW-UP SBP diamonds (Figure 3, p9/idx8): 6-mo -4.24 mm Hg (95% CI, -7.33 to -1.14; P=.01, I2=77.36%), 12 studies; also 3-mo -1.24 (-3.48 to 1.00), 12-mo -3.49 (-7.26 to 0.28), 18-mo -6.10 (-9.77 to -2.43), 24-mo -3.67 (-6.14 to -1.20).",
+      "confidence": "high"
+    },
+    {
+      "query_id": "q3",
+      "pmcid": "PMC11271409",
+      "gold_pages": [
+        4,
+        0
+      ],
+      "answer_value": "PDP vs control significantly reduced triglycerides. ITT analysis (n=347) between groups showed significant TG reduction: mean difference = -0.13 mmol/l (log-transformed 95% CI -0.07 to -0.01, P=0.016). Changes in LDL-C were not significant. Postprandial TGs did NOT differ between groups. (Page 4 also reports the per-protocol post-hoc TG result: mean difference -0.17 mmol/l, log-transformed 95% CI -0.07 to -0.01, P=0.032.)",
+      "confidence": "high"
+    },
+    {
+      "query_id": "q4",
+      "pmcid": "PMC11153305",
+      "gold_pages": [
+        5
+      ],
+      "answer_value": "129 assessed for eligibility; 29 excluded (23 did not meet inclusion criteria, 6 declined); 100 randomised; allocated to FMD group n=51 and control group n=49. (Completed baseline: FMD n=49, control n=43; completed trial at 12 months: FMD n=43, control n=39.)",
+      "confidence": "high"
+    },
+    {
+      "query_id": "q5",
+      "pmcid": "PMC11271409",
+      "gold_pages": [
+        4,
+        0
+      ],
+      "answer_value": "There were four adverse events during the study; none were classified as severe. No withdrawals resulted from injury. One withdrawal was due to an undisclosed food allergy (nut allergy): after consuming the test muffin the participant had mild itching of tongue/throat, nausea and upset stomach that resolved with oral diphenhydramine (graded CTCAE toxicity grade 1, probable allergic reaction to the muffin). The other three adverse events were bruising after a blood draw (grade 1), light-headedness at time of blood draw (grade 1), and mild bleeding from the continuous glucose monitor/CGM (grade 2), all of which resolved on their own. No serious intervention-related adverse events were reported.",
+      "confidence": "high"
+    }
+  ],
+  "notes": "All 5 queries had VERIFY verdicts of confirmed or corrected (none not_found), so all carry non-empty gold_pages and the verified answer_value. q1/q4 (PMC11153305) and q3/q5 (PMC11271409) confirmed unchanged from reader. q2 (PMC10867699) was CORRECTED: gold_pages expanded from reader's [7,4] to [4,7,8] to add 0-based index 8 (printed p9, Figure 3), since the answer explicitly cites the Fig 3 6-month follow-up SBP diamond (-4.24) that physically lives on that page. All answer_values taken from the VERIFY block per instructions. 0-based page indices throughout."
+}

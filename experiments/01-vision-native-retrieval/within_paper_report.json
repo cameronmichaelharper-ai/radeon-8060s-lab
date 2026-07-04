@@ -1,0 +1,95 @@
+{
+  "vidore/colSmol-256M": {
+    "within_hit@1": "1/5",
+    "within_hit@3": "1/5",
+    "per_q": {
+      "q1": {
+        "paper": "PMC11153305",
+        "within_rank": 9,
+        "of": 15
+      },
+      "q2": {
+        "paper": "PMC10867699",
+        "within_rank": 4,
+        "of": 17
+      },
+      "q3": {
+        "paper": "PMC11271409",
+        "within_rank": 6,
+        "of": 19
+      },
+      "q4": {
+        "paper": "PMC11153305",
+        "within_rank": 5,
+        "of": 15
+      },
+      "q5": {
+        "paper": "PMC11271409",
+        "within_rank": 1,
+        "of": 19
+      }
+    }
+  },
+  "vidore/colSmol-500M": {
+    "within_hit@1": "2/5",
+    "within_hit@3": "2/5",
+    "per_q": {
+      "q1": {
+        "paper": "PMC11153305",
+        "within_rank": 10,
+        "of": 15
+      },
+      "q2": {
+        "paper": "PMC10867699",
+        "within_rank": 6,
+        "of": 17
+      },
+      "q3": {
+        "paper": "PMC11271409",
+        "within_rank": 1,
+        "of": 19
+      },
+      "q4": {
+        "paper": "PMC11153305",
+        "within_rank": 9,
+        "of": 15
+      },
+      "q5": {
+        "paper": "PMC11271409",
+        "within_rank": 1,
+        "of": 19
+      }
+    }
+  },
+  "vidore/colqwen2.5-v0.2": {
+    "within_hit@1": "2/5",
+    "within_hit@3": "2/5",
+    "per_q": {
+      "q1": {
+        "paper": "PMC11153305",
+        "within_rank": 8,
+        "of": 15
+      },
+      "q2": {
+        "paper": "PMC10867699",
+        "within_rank": 5,
+        "of": 17
+      },
+      "q3": {
+        "paper": "PMC11271409",
+        "within_rank": 1,
+        "of": 19
+      },
+      "q4": {
+        "paper": "PMC11153305",
+        "within_rank": 4,
+        "of": 15
+      },
+      "q5": {
+        "paper": "PMC11271409",
+        "within_rank": 1,
+        "of": 19
+      }
+    }
+  }
+}
