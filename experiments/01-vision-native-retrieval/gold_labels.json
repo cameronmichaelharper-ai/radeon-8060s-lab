@@ -49,7 +49,89 @@
       ],
       "answer_value": "There were four adverse events during the study; none were classified as severe. No withdrawals resulted from injury. One withdrawal was due to an undisclosed food allergy (nut allergy): after consuming the test muffin the participant had mild itching of tongue/throat, nausea and upset stomach that resolved with oral diphenhydramine (graded CTCAE toxicity grade 1, probable allergic reaction to the muffin). The other three adverse events were bruising after a blood draw (grade 1), light-headedness at time of blood draw (grade 1), and mild bleeding from the continuous glucose monitor/CGM (grade 2), all of which resolved on their own. No serious intervention-related adverse events were reported.",
       "confidence": "high"
+    },
+    {
+      "query_id": "q6",
+      "pmcid": "PMC11153305",
+      "gold_pages": [
+        8
+      ],
+      "answer_value": "-3.5 cm (95% CI -5.3, -1.6), p<0.001",
+      "confidence": "high"
+    },
+    {
+      "query_id": "q7",
+      "pmcid": "PMC11153305",
+      "gold_pages": [
+        8
+      ],
+      "answer_value": "Adjusted estimated treatment effect 0.4 (95% CI 0.1, 0.7), p=0.01",
+      "confidence": "high"
+    },
+    {
+      "query_id": "q8",
+      "pmcid": "PMC11153305",
+      "gold_pages": [
+        5
+      ],
+      "answer_value": "43 (FMD group; control group n=39)",
+      "confidence": "high"
+    },
+    {
+      "query_id": "q9",
+      "pmcid": "PMC10867699",
+      "gold_pages": [
+        3,
+        4
+      ],
+      "answer_value": "28 studies included in the review and meta-analysis (21 from database/register searching + 7 from citation searching), representing 8257 participants (3828 [46.4%] intervention, 4429 [53.6%] control)",
+      "confidence": "high"
+    },
+    {
+      "query_id": "q10",
+      "pmcid": "PMC10867699",
+      "gold_pages": [
+        8
+      ],
+      "answer_value": "I2 = 77.36% (pooled mean SBP difference -4.24 mm Hg; 95% CI, -7.33 to -1.14) at 6-mo follow-up in Figure 3",
+      "confidence": "high"
+    },
+    {
+      "query_id": "q11",
+      "pmcid": "PMC10867699",
+      "gold_pages": [
+        8
+      ],
+      "answer_value": "-1.86 mm Hg (95% CI, -3.82 to 0.10; P = .06; I2 = 67.57%) across the 12 studies with 6-month follow-up DBP data (42.9%)",
+      "confidence": "high"
+    },
+    {
+      "query_id": "q12",
+      "pmcid": "PMC11271409",
+      "gold_pages": [
+        2
+      ],
+      "answer_value": "Per-protocol analysis: PDP group n=108 and control group n=117 (of 177 and 170 included in the primary analysis, respectively; 347 randomized: 177 PDP / 170 control)",
+      "confidence": "high"
+    },
+    {
+      "query_id": "q13",
+      "pmcid": "PMC11271409",
+      "gold_pages": [
+        3
+      ],
+      "answer_value": "Baseline low-density lipoprotein cholesterol (mmol/l): PDP 3.29 (3.19 to 3.39) vs control 3.46 (3.35 to 3.57); total 3.38 (3.30 to 3.45)",
+      "confidence": "high"
+    },
+    {
+      "query_id": "q14",
+      "pmcid": "PMC11271409",
+      "gold_pages": [
+        3
+      ],
+      "answer_value": "Baseline HbA1c (%): PDP 5.34 (5.30 to 5.39) vs control 5.45 (5.36 to 5.54); total 5.39 (5.35 to 5.44)",
+      "confidence": "high"
     }
   ],
-  "notes": "All 5 queries had VERIFY verdicts of confirmed or corrected (none not_found), so all carry non-empty gold_pages and the verified answer_value. q1/q4 (PMC11153305) and q3/q5 (PMC11271409) confirmed unchanged from reader. q2 (PMC10867699) was CORRECTED: gold_pages expanded from reader's [7,4] to [4,7,8] to add 0-based index 8 (printed p9, Figure 3), since the answer explicitly cites the Fig 3 6-month follow-up SBP diamond (-4.24) that physically lives on that page. All answer_values taken from the VERIFY block per instructions. 0-based page indices throughout."
+  "notes": "All 5 queries had VERIFY verdicts of confirmed or corrected (none not_found), so all carry non-empty gold_pages and the verified answer_value. q1/q4 (PMC11153305) and q3/q5 (PMC11271409) confirmed unchanged from reader. q2 (PMC10867699) was CORRECTED: gold_pages expanded from reader's [7,4] to [4,7,8] to add 0-based index 8 (printed p9, Figure 3), since the answer explicitly cites the Fig 3 6-month follow-up SBP diamond (-4.24) that physically lives on that page. All answer_values taken from the VERIFY block per instructions. 0-based page indices throughout. | Expanded 2026-07-04: +q6-q14 (9 verified table/figure queries) via mining workflow."
 }

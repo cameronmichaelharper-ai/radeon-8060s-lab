@@ -1,7 +1,86 @@
 [
-  {"id": "q1", "paper": "PMC11153305", "text": "In the fasting-mimicking diet trial, what was the effect on HbA1c and the medication effect score?", "target": "results table with HbA1c / medication effect score change between FMD and control"},
-  {"id": "q2", "paper": "PMC10867699", "text": "What was the pooled reduction in systolic blood pressure from digital health interventions for hypertension?", "target": "meta-analysis pooled systolic BP effect (forest plot / results table)"},
-  {"id": "q3", "paper": "PMC11271409", "text": "What was the primary outcome result comparing the personalized dietary program with the control diet for triglycerides or postprandial response?", "target": "primary outcome results table/figure"},
-  {"id": "q4", "paper": "PMC11153305", "text": "How many participants were randomized in the fasting-mimicking diet trial and how were they allocated between groups?", "target": "participant flow / CONSORT diagram / randomization numbers"},
-  {"id": "q5", "paper": "PMC11271409", "text": "What adverse events or safety outcomes were reported in the personalized nutrition trial?", "target": "adverse events / safety reporting section"}
+  {
+    "id": "q1",
+    "paper": "PMC11153305",
+    "text": "In the fasting-mimicking diet trial, what was the effect on HbA1c and the medication effect score?",
+    "target": "results table with HbA1c / medication effect score change between FMD and control"
+  },
+  {
+    "id": "q2",
+    "paper": "PMC10867699",
+    "text": "What was the pooled reduction in systolic blood pressure from digital health interventions for hypertension?",
+    "target": "meta-analysis pooled systolic BP effect (forest plot / results table)"
+  },
+  {
+    "id": "q3",
+    "paper": "PMC11271409",
+    "text": "What was the primary outcome result comparing the personalized dietary program with the control diet for triglycerides or postprandial response?",
+    "target": "primary outcome results table/figure"
+  },
+  {
+    "id": "q4",
+    "paper": "PMC11153305",
+    "text": "How many participants were randomized in the fasting-mimicking diet trial and how were they allocated between groups?",
+    "target": "participant flow / CONSORT diagram / randomization numbers"
+  },
+  {
+    "id": "q5",
+    "paper": "PMC11271409",
+    "text": "What adverse events or safety outcomes were reported in the personalized nutrition trial?",
+    "target": "adverse events / safety reporting section"
+  },
+  {
+    "id": "q6",
+    "paper": "PMC11153305",
+    "text": "In the fasting-mimicking diet trial, what was the adjusted estimated treatment effect on waist circumference at 12 months?",
+    "target": "Table 3 (continued), 'Waist circumference (cm)' 12 months row, adjusted estimated treatment effect column"
+  },
+  {
+    "id": "q7",
+    "paper": "PMC11153305",
+    "text": "What was the effect of the fasting-mimicking diet on insulin sensitivity as measured by the Matsuda index at 12 months?",
+    "target": "Table 3 (continued), 'Insulin sensitivity indices' -> 'Matsuda index' 12 months row, adjusted estimated treatment effect column"
+  },
+  {
+    "id": "q8",
+    "paper": "PMC11153305",
+    "text": "In the FMD trial, how many participants in the FMD group completed the trial at 12 months?",
+    "target": "Fig. 1 CONSORT flow chart, 'Completed the trial at 12 months' box in the FMD arm"
+  },
+  {
+    "id": "q9",
+    "paper": "PMC10867699",
+    "text": "How many studies and total participants were included in this digital-health hypertension meta-analysis?",
+    "target": "Results text stating 28 studies and 8257 individuals (with intervention/control breakdown)"
+  },
+  {
+    "id": "q10",
+    "paper": "PMC10867699",
+    "text": "For the pooled follow-up systolic BP difference at 6 months between the digital-health intervention and control groups, what was the I-squared heterogeneity (and the pooled mean difference)?",
+    "target": "Figure 3 forest plot, 6-mo Follow-up Total row (heterogeneity I2 and pooled diamond value)"
+  },
+  {
+    "id": "q11",
+    "paper": "PMC10867699",
+    "text": "What was the pooled mean difference in follow-up diastolic BP at 6 months between the digital-health intervention and control groups?",
+    "target": "Results body text on 6-month follow-up DBP across 12 studies (references eFigure 2 in Supplement)"
+  },
+  {
+    "id": "q12",
+    "paper": "PMC11271409",
+    "text": "How many participants in each group were included in the per-protocol analysis?",
+    "target": "Fig. 2 CONSORT diagram, 'Per-protocol analysis (n=...)' lines in the PDP and control boxes"
+  },
+  {
+    "id": "q13",
+    "paper": "PMC11271409",
+    "text": "What were the baseline LDL cholesterol levels in the personalized-diet (PDP) and control groups?",
+    "target": "Table 1 'Descriptive characteristics of the participants', LDL cholesterol row"
+  },
+  {
+    "id": "q14",
+    "paper": "PMC11271409",
+    "text": "What was the baseline HbA1c in each treatment group at randomization?",
+    "target": "Table 1 'Descriptive characteristics of the participants', HbA1c (%) row"
+  }
 ]
