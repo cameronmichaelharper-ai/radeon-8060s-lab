@@ -22,7 +22,7 @@ Running list of models worth testing on this machine, by role in the research-mc
 | vidore/colSmol-256M | dense (SmolVLM) | 256M | colpali-engine (`ColIdefics3`) | ✅ | weak: hit@1 1/5, buries tables |
 | vidore/colSmol-500M | dense | 500M | `ColIdefics3` | ✅ | marginal: hit@1 2/5 |
 | vidore/colqwen2.5-v0.2 | dense (Qwen2.5-VL) | ~3B | `ColQwen2_5` | ✅ | hit@1 2/5; table page still rank 8 |
-| **nomic-ai/colnomic-embed-multimodal-3b** | dense (Qwen2.5-VL) | ~3B | `ColQwen2_5` (drop-in) | 🔄 | SOTA-class; **the current retest** |
+| **nomic-ai/colnomic-embed-multimodal-3b** | dense (Qwen2.5-VL) | ~3B | `ColQwen2_5` (drop-in) | ✅ | **best pure retriever tested** — hit@5 4/5, MRR 0.52; but FMD table (q1) still rank 9 |
 | nomic-ai/colnomic-embed-multimodal-7b | dense | ~7B | `ColQwen2_5` | 🔎 | stronger sibling |
 | jina-embeddings-v4 | dense (Qwen2.5-VL) | 3.8B | jina/transformers | 🔎 | multi-vector **90.17 ViDoRe** (vs ColPali ~84) |
 | NVIDIA Nemotron ColEmbed V2 | dense | 8B | transformers | 🔎 | **#1 ViDoRe V3** (Feb 2026), NDCG@10 63.42 |
@@ -84,5 +84,8 @@ Running list of models worth testing on this machine, by role in the research-mc
 | colSmol-256M | 1/5 | weak |
 | colSmol-500M | 2/5 | marginal |
 | colqwen2.5-v0.2 | 2/5 | marginal |
-| Gemma-4-26B-A4B (read-to-rank) | ~3/3 top-3 | **best so far** |
-| colnomic-embed-multimodal-3b | 🔄 running | — |
+| colnomic-embed-multimodal-3b | 2/5 (hit@5 **4/5**, MRR 0.52) | **best pure retriever**; q1 table still rank 9 |
+| Gemma-4-26B-A4B (read-to-rank) | ~3/3 top-3 | **best for table localization** |
+
+**Takeaway:** embedding retrieval (even SOTA colnomic) buries the specific results table; vision-MoE
+read-to-rank finds it. Winning design = colnomic top-5 → Gemma read-to-rank over those 5.

@@ -163,6 +163,88 @@
       }
     }
   },
+  "nomic-ai/colnomic-embed-multimodal-3b": {
+    "agg": {
+      "hit@1": 2,
+      "hit@3": 2,
+      "hit@5": 4,
+      "mrr": 0.5222,
+      "paper@1": 5,
+      "n": 5
+    },
+    "per_query": {
+      "q1": {
+        "gold_pages": [
+          4,
+          7
+        ],
+        "gold_pmcid": "PMC11153305",
+        "first_hit_rank": 9,
+        "paper@1": true,
+        "top1": {
+          "pmcid": "PMC11153305",
+          "page": 0,
+          "score": 27.5222
+        }
+      },
+      "q2": {
+        "gold_pages": [
+          4,
+          7,
+          8
+        ],
+        "gold_pmcid": "PMC10867699",
+        "first_hit_rank": 4,
+        "paper@1": true,
+        "top1": {
+          "pmcid": "PMC10867699",
+          "page": 0,
+          "score": 20.9384
+        }
+      },
+      "q3": {
+        "gold_pages": [
+          0,
+          4
+        ],
+        "gold_pmcid": "PMC11271409",
+        "first_hit_rank": 1,
+        "paper@1": true,
+        "top1": {
+          "pmcid": "PMC11271409",
+          "page": 0,
+          "score": 26.1168
+        }
+      },
+      "q4": {
+        "gold_pages": [
+          5
+        ],
+        "gold_pmcid": "PMC11153305",
+        "first_hit_rank": 4,
+        "paper@1": true,
+        "top1": {
+          "pmcid": "PMC11153305",
+          "page": 0,
+          "score": 22.6748
+        }
+      },
+      "q5": {
+        "gold_pages": [
+          0,
+          4
+        ],
+        "gold_pmcid": "PMC11271409",
+        "first_hit_rank": 1,
+        "paper@1": true,
+        "top1": {
+          "pmcid": "PMC11271409",
+          "page": 0,
+          "score": 16.9136
+        }
+      }
+    }
+  },
   "vidore/colqwen2.5-v0.2": {
     "agg": {
       "hit@1": 2,

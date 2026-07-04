@@ -41,8 +41,17 @@ in the retrieval path.
 | colSmol-256M | 256M | 1/5 | 1/5 | 2/5 | 0.334 | 5/5 |
 | colSmol-500M | 500M | 2/5 | 2/5 | 2/5 | 0.453 | 5/5 |
 | colqwen2.5-v0.2 | ~3B | 2/5 | 2/5 | 3/5 | 0.494 | 5/5 |
+| **colnomic-embed-multimodal-3b** | ~3B | 2/5 | 2/5 | **4/5** | **0.522** | 5/5 |
 
-Per-query first-gold-rank: q1 stays **8–10** in every model; q3/q5 (abstract-answerable) = rank 1.
+Per-query first-gold-rank: q1 stays **8–10 in every model, colnomic included (rank 9)**; q3/q5
+(abstract-answerable) = rank 1. colnomic (SOTA-class) is the **best pure retriever tested** —
+hit@5 4/5, top MRR, and it recovered q3→1 and q4→4 — but it still does NOT surface the FMD
+results table (q1), confirming this is an embedding-retrieval ceiling, not a small-model artifact.
+
+**Emerging best architecture (hybrid):** colnomic narrows to top-5 cheaply (hit@5 4/5 = answer
+usually in 5), then **vision-MoE read-to-rank** over just those 5 pages (which beat all retrievers
+on table queries: q1 rank 2 vs 9) picks and extracts the value. Cheap retriever + expensive reader,
+only over 5 candidates — scales far better than reading every page.
 
 ## The decisive probe — within-paper reranking (candidates restricted to correct paper)
 
