@@ -14,6 +14,7 @@ Gemma calls are LOCAL (Lemonade) -- no cloud budget.
 """
 import os
 import re
+import time
 import json
 import base64
 import urllib.request
@@ -32,27 +33,40 @@ VALUE_RE = re.compile(r"VALUE:\s*(.+)", re.IGNORECASE)
 
 
 def gemma_score(png_path, question):
+    """Return (score 0-100, value). Retries on HTTP/parse failure; neutral 50 on give-up
+    (so a real gold page is not sunk to the bottom by a transient blip)."""
     with open(png_path, "rb") as f:
         b64 = base64.b64encode(f.read()).decode()
     prompt = (
-        "You are ranking pages of a scientific paper by how directly THIS page answers a "
-        "question. Look at the page image.\n\nQuestion: " + question + "\n\n"
-        "Score HIGH only if this page contains the specific answer (the results table, the "
-        "figure/forest-plot, the CONSORT flow diagram, or the stated numeric value). Score LOW "
-        "for title/abstract/intro/methods/discussion/references without the actual result.\n\n"
+        "You are ranking pages of a scientific paper to find the PRIMARY SOURCE of a specific "
+        "answer.\n\nQuestion: " + question + "\n\nScore in ONE band:\n"
+        "90-100: THIS page IS the results TABLE, FIGURE/forest-plot, or CONSORT diagram that "
+        "contains the specific numeric answer.\n"
+        "60-85: THIS page states the answer only in prose (abstract, results narrative, or "
+        "discussion) - correct value but not the source table/figure.\n"
+        "0-30: intro/methods/references or a page without the answer.\n\n"
         "Respond with EXACTLY two lines:\nSCORE: <integer 0-100>\nVALUE: <the number/result if present, else NONE>"
     )
     payload = {"model": GEMMA, "messages": [{"role": "user", "content": [
         {"type": "text", "text": prompt},
         {"type": "image_url", "image_url": {"url": f"data:image/png;base64,{b64}"}},
     ]}], "temperature": 0.0, "max_tokens": 1400}
-    req = urllib.request.Request(LEMONADE, data=json.dumps(payload).encode(),
-                                 headers={"Content-Type": "application/json"})
-    with urllib.request.urlopen(req, timeout=600) as r:
-        msg = json.load(r)["choices"][0]["message"]
-    text = (msg.get("content") or "").strip() or (msg.get("reasoning_content") or "")
-    m, v = SCORE_RE.search(text), VALUE_RE.search(text)
-    return (int(m.group(1)) if m else -1), (v.group(1).strip() if v else "")
+    data = json.dumps(payload).encode()
+    last = "?"
+    for attempt in range(3):
+        try:
+            req = urllib.request.Request(LEMONADE, data=data, headers={"Content-Type": "application/json"})
+            with urllib.request.urlopen(req, timeout=600) as r:
+                msg = json.load(r)["choices"][0]["message"]
+            text = (msg.get("content") or "").strip() or (msg.get("reasoning_content") or "")
+            m, v = SCORE_RE.search(text), VALUE_RE.search(text)
+            if m:
+                return int(m.group(1)), (v.group(1).strip() if v else "")
+            last = "no SCORE line parsed"
+        except Exception as e:  # noqa: BLE001 -- transient HTTP 500 / timeout
+            last = str(e)
+        time.sleep(2)
+    return 50, f"[fallback after retries: {last}]"
 
 
 def png_for(pmcid, page):
@@ -64,10 +78,11 @@ def main():
     gold = {l["query_id"]: l for l in json.load(open(GOLD_FILE, encoding="utf-8"))["labels"]}
     qtext = {q["id"]: q["text"] for q in json.load(open(QUERIES_FILE, encoding="utf-8"))}
 
+    allowed = {x for x in os.environ.get("QIDS", "").split(",") if x}
     report = {}
     recall_hits = hybrid_hits = n = 0
     for qid, ranked in results.items():
-        if qid not in gold:
+        if qid not in gold or (allowed and qid not in allowed):
             continue
         g = gold[qid]
         goldset = set(g["gold_pages"])

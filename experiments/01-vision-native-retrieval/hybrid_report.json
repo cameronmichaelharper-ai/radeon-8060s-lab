@@ -1,0 +1,68 @@
+{
+  "q1": {
+    "pmcid": "PMC11153305",
+    "gold_pages": [
+      4,
+      7
+    ],
+    "recall@K": true,
+    "hybrid_hit@1": false,
+    "gold_rank_after_rerank": 6,
+    "final_page": 10,
+    "final_value": "The question asks for the effect. The figures show the effect. The text provides some numbers."
+  },
+  "q2": {
+    "pmcid": "PMC10867699",
+    "gold_pages": [
+      4,
+      7,
+      8
+    ],
+    "recall@K": true,
+    "hybrid_hit@1": true,
+    "gold_rank_after_rerank": 1,
+    "final_page": 8,
+    "final_value": "The question asks for \"the pooled reduction\". Since there are multiple time points, I should look for a general one or list the ones shown. However, the prompt asks for \"the number/result if present\"."
+  },
+  "q3": {
+    "pmcid": "PMC11271409",
+    "gold_pages": [
+      0,
+      4
+    ],
+    "recall@K": true,
+    "hybrid_hit@1": false,
+    "gold_rank_after_rerank": 2,
+    "final_page": 5,
+    "final_value": "The figure shows the TG change, but"
+  },
+  "q4": {
+    "pmcid": "PMC11153305",
+    "gold_pages": [
+      5
+    ],
+    "recall@K": true,
+    "hybrid_hit@1": false,
+    "gold_rank_after_rerank": 3,
+    "final_page": 2,
+    "final_value": "347 randomized (177 to PFD group, 170 to control group)"
+  },
+  "q5": {
+    "pmcid": "PMC11271409",
+    "gold_pages": [
+      0,
+      4
+    ],
+    "recall@K": true,
+    "hybrid_hit@1": true,
+    "gold_rank_after_rerank": 1,
+    "final_page": 0,
+    "final_value": "No intervention-related adverse events were reported."
+  },
+  "_summary": {
+    "K": 10,
+    "n": 5,
+    "retriever_recall@K": "5/5",
+    "hybrid_hit@1": "2/5"
+  }
+}

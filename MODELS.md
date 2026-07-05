@@ -87,7 +87,9 @@ Running list of models worth testing on this machine, by role in the research-mc
 | colnomic-embed-multimodal-3b | 6/14 | **11/14** | 0.58 | **best recall** (feeds reranker) |
 | Gemma-4-26B-A4B (read-to-rank) | best on table queries (n=3) | — | — | **best table localization** |
 
-**Takeaway:** on 14 queries the retrievers are closer than n=5 suggested — 500M ties/leads on hit@1,
-colnomic leads on recall (79% hit@5). Dense retrieval reliably buries the FMD results table (q1) and
-Table-1 baseline rows (q14 retrieved by none); the vision-MoE reader resolves these. Winning design =
-**colnomic top-K (recall) → Gemma read-to-rank over the K candidates (table localization)**.
+**Takeaway (updated):** on 14 queries the retrievers are closer than n=5 suggested — 500M ties/leads
+on hit@1, colnomic leads on recall (79% hit@5). BUT the cheap **colnomic top-10 → Gemma rerank hybrid
+tested at hit@1 2/5 = pure colnomic (no gain)**: the specific table page is often outside top-10, the
+reader over-scores look-alikes, and cross-paper candidates contaminate. *Reading* is solved; cheap
+retrieval *of the exact table page* is the open problem. Next levers: top-20 + restrict-to-routed-paper
++ tie-break pass, or a stronger retriever (jina-embeddings-v4 multi-vector, Nemotron ColEmbed 8B).

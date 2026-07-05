@@ -146,6 +146,35 @@ it's specifically dense results tables and generic Table-1 rows that dense retri
 *strengthens* the hybrid rationale: use colnomic's recall to get a candidate set, let the vision-MoE
 reader resolve the hard table pages.
 
+## UPDATE 2026-07-04 (later still) — the cheap hybrid does NOT beat pure retrieval on hit@1
+
+Ran the recommended hybrid (colnomic top-10 → Gemma read-to-rank, K=10, hardened: retry-on-500,
+rubric scoring results-tables 90–100 vs prose 60–85, neutral fallback) on the 5 core queries.
+**Result: recall@10 = 5/5 but hybrid hit@1 = 2/5 — identical to pure colnomic (2/5). No net gain.**
+(q2 forest-plot p8 and q5 adverse-events p0 → rank 1 ✓; q1 rank 6, q3 rank 2, q4 rank 3.)
+
+Three diagnosed failure modes — this is the honest ceiling:
+1. **Retriever recall of the SPECIFIC page.** For q1 the actual Table 3 (p7) is *outside* colnomic's
+   top-10; only the prose narrative (p4) is retrieved. The hybrid cannot pick a page the retriever
+   never surfaced — recall@10 was "True" only via p4, not the real table.
+2. **The reader over-scores look-alikes.** Non-gold pages scored 95 (q1 p9/p10, q3 p5) — Gemma judged
+   them table-like without holding the specific value. It is not a perfect judge over 10 candidates.
+3. **Cross-paper contamination.** q4's candidate set included the *nutrition* paper's CONSORT (a
+   different N); Gemma scored it 100 by matching "randomized/allocated" generically, beating the FMD
+   CONSORT. Fix: restrict candidates to the routed paper (paper@1 is 13/14).
+
+Contrast: the earlier read-to-rank over the routed paper's **full** page set (`09_read_to_rank.py`)
+*did* beat retrieval on tables (q1→rank 2) — but it reads every page (expensive) and needs correct
+routing. The cheap top-10 hybrid trades that reliability away.
+
+**Honest bottom line for the whole investigation:** the *reading* step is solved (Gemma extracts
+values exactly, given the right page). Neither cheap embedding retrieval nor the cheap top-10 hybrid
+reliably delivers the **specific results-table page** to the reader. The unsolved problem is cheap,
+high-recall retrieval *of the exact table page*. Next levers (not yet run): retrieve deeper (top-20)
++ restrict-to-routed-paper (kills contamination) + a discriminating tie-break pass; or a stronger
+purpose-built retriever (jina-embeddings-v4 multi-vector, Nemotron ColEmbed 8B). Also: the table>prose
+rubric leaked reasoning into the VALUE field — split scoring and extraction into two calls next time.
+
 ## Files
 - Scripts: `01_fetch_and_render.py` · `02_encode_and_index.py` · `03_query.py` · `04_eval_queries.py`
   · `05_sweep.py` (model-parameterized) · `06_score.py` (vs gold) · `07_read_page.py` (Lemonade vision)
